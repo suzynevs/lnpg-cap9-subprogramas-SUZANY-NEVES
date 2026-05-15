@@ -1,0 +1,56 @@
+agenda = {}
+
+
+def adicionar(nome, telefone):
+
+    agenda[nome] = telefone
+
+
+def remover(nome):
+
+    if nome in agenda:
+        del agenda[nome]
+
+
+def atualizar(nome, telefone):
+
+    if nome in agenda:
+        agenda[nome] = telefone
+
+
+def buscar(nome):
+
+    return nome in agenda
+
+
+def telefone(nome):
+
+    if nome in agenda:
+        return agenda[nome]
+
+    return "Nao encontrado"
+
+
+def listar():
+
+    print("\nCONTATOS")
+
+    for nome in agenda:
+        print(nome, "-", agenda[nome])
+
+
+adicionar("Ana", "9999-9999")
+
+adicionar("Carlos", "8888-8888")
+
+atualizar("Ana", "7777-7777")
+
+print(buscar("Ana"))
+
+print(telefone("Ana"))
+
+listar()
+
+remover("Carlos")
+
+listar()
