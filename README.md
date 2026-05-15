@@ -68,4 +68,29 @@ As funções podem ser usadas novamente sem copiar código.
 A versão modularizada ficou mais organizada e mais fácil de entender.
 situacao() define situação.
 
+# Tarefa 3: Passagem de Valor
 
+Neste programa foi possível observar como funciona a passagem de parâmetros por valor em Java.
+
+No método `main()`, foi criada uma variável chamada `numero` com valor `10`. Esse valor foi enviado para o método `alterarNumero()`.
+
+Dentro do método, o valor recebido foi alterado para `50`. Porém, quando o programa voltou para o `main()`, a variável original continuou com valor `10`.
+
+Isso acontece porque, em Java, tipos primitivos utilizam passagem por valor. Ou seja, o método não recebe a variável original, mas apenas uma cópia do valor dela.
+
+Nesse caso, o valor copiado foi `10`.
+
+Por isso, a alteração feita dentro do método aconteceu apenas localmente, sem modificar a variável criada no `main()`.
+## Comentários sobre o código
+
+A versão modularizada ficou mais fácil de ler e entender, porque o código foi separado em partes menores.
+
+Também ficou mais fácil de reutilizar algumas partes do programa sem repetir código.
+
+A manutenção ficou melhor, já que dá para alterar um método sem mexer no programa inteiro.
+
+O fluxo do programa ficou mais organizado e simples de acompanhar.
+
+Os métodos ficaram pequenos e objetivos.
+
+A coesão ficou boa porque cada método faz apenas uma tarefa específica.
