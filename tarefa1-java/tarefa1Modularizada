@@ -1,1 +1,50 @@
+import java.util.Scanner;
 
+public class Main {
+
+    static Scanner sc = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        for (int i = 0; i < 5; i++) {
+
+            System.out.print("Nome: ");
+            String nome = sc.nextLine();
+
+            double media = media();
+
+            System.out.println("Aluno: " + nome);
+            System.out.println("Media: " + media);
+            System.out.println("Situacao: " + situacao(media));
+            System.out.println();
+        }
+    }
+
+    static double nota() {
+
+        System.out.print("Nota: ");
+        return sc.nextDouble();
+    }
+
+    static double media() {
+
+        double media = (nota() + nota() + nota()) / 3;
+
+        sc.nextLine();
+
+        return media;
+    }
+
+    static String situacao(double media) {
+
+        if (media >= 7) {
+            return "Aprovado";
+        }
+
+        if (media >= 5) {
+            return "Recuperacao";
+        }
+
+        return "Reprovado";
+    }
+}
