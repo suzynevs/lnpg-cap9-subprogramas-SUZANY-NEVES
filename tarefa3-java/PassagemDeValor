@@ -1,1 +1,22 @@
+public class Main {
 
+    public static void main(String[] args) {
+
+        int numero = 10;
+
+        System.out.println("Antes do metodo: " + numero);
+
+        alterarNumero(numero);
+
+        System.out.println("Depois do metodo: " + numero);
+    }
+
+    public static void alterarNumero(int x) {
+
+        System.out.println("Valor recebido: " + x);
+
+        x = 50;
+
+        System.out.println("Valor alterado: " + x);
+    }
+}
