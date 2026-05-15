@@ -94,3 +94,19 @@ O fluxo do programa ficou mais organizado e simples de acompanhar.
 Os métodos ficaram pequenos e objetivos.
 
 A coesão ficou boa porque cada método faz apenas uma tarefa específica.
+
+# Tarefa 4: Objetos e Referencias
+
+Neste programa foi possível entender como objetos funcionam em chamadas de métodos em Java.
+
+Foi criado um objeto da classe `Produto` com nome e preço. Depois, o objeto foi enviado para o método `aplicarDesconto()`.
+
+Dentro do método, o preço do objeto foi alterado. Quando o programa voltou para o `main()`, o valor continuou alterado.
+
+Isso acontece porque o Java copia a referência do objeto, e não o objeto inteiro.
+
+O Java não possui passagem por referência verdadeira. Ele sempre utiliza passagem por valor.
+
+No caso dos objetos, o valor copiado é a referência que aponta para o objeto na memória.
+
+Por isso, tanto o `main()` quanto o método `aplicarDesconto()` acessam o mesmo objeto, fazendo com que as alterações permaneçam após a chamada do método.
