@@ -1,0 +1,32 @@
+public class Main {
+
+    static class Produto {
+        String nome;
+        double preco;
+    }
+
+    public static void aplicarDesconto(Produto p) {
+        System.out.println("Antes do desconto:");
+        System.out.println("Nome: " + p.nome);
+        System.out.println("Preço: R$ " + p.preco);
+
+        p.preco = p.preco * 0.9;
+
+        System.out.println("\nDepois do desconto:");
+        System.out.println("Nome: " + p.nome);
+        System.out.println("Preço: R$ " + p.preco);
+    }
+
+    public static void main(String[] args) {
+
+        Produto produto = new Produto();
+        produto.nome = "Notebook";
+        produto.preco = 3500.00;
+
+        aplicarDesconto(produto);
+
+        System.out.println("\nObjeto no main após chamada do método:");
+        System.out.println("Nome: " + produto.nome);
+        System.out.println("Preço: R$ " + produto.preco);
+    }
+}
