@@ -110,3 +110,50 @@ O Java não possui passagem por referência verdadeira. Ele sempre utiliza passa
 No caso dos objetos, o valor copiado é a referência que aponta para o objeto na memória.
 
 Por isso, tanto o `main()` quanto o método `aplicarDesconto()` acessam o mesmo objeto, fazendo com que as alterações permaneçam após a chamada do método.
+
+
+## Tarefa 5 Projeto Livre — Agenda de Contatos
+
+O programa funciona como uma agenda simples de contatos.
+
+Foi utilizado um dicionário para armazenar os nomes e telefones.
+
+O código foi dividido em funções para deixar cada parte do sistema responsável por apenas uma tarefa.
+
+---
+
+# Funções criadas
+
+- `adicionar()`
+- `remover()`
+- `atualizar()`
+- `buscar()`
+- `telefone()`
+- `listar()`
+
+---
+
+# Diagrama simples das chamadas
+
+```text
+main
+ ├── adicionar()
+ ├── atualizar()
+ ├── buscar()
+ ├── telefone()
+ ├── listar()
+ └── remover()
+```
+
+Justificativa da divisão
+
+Cada função foi separada para realizar apenas uma responsabilidade específica, isso deixou o código mais organizado e evitou repetição.
+
+A principal dificuldade que encontrei foi organizar as funções de forma simples sem repetir código.
+
+A modularização deixou o código:
+
+mais organizado;
+mais fácil de entender;
+mais simples de manter;
+com menos repetição.
