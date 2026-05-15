@@ -1,1 +1,48 @@
+def ler_produto():
 
+    return input("Produto: ")
+
+
+def subtotal(qtd, preco):
+
+    return qtd * preco
+
+
+def desconto(valor):
+
+    if valor > 500:
+        return valor * 0.10
+
+    if valor > 200:
+        return valor * 0.05
+
+    return 0
+
+
+def total(sub, desc):
+
+    return sub - desc
+
+
+def cupom(produto, sub, desc, tot):
+
+    print("\nCUPOM")
+    print("Produto:", produto)
+    print("Subtotal:", sub)
+    print("Desconto:", desc)
+    print("Total:", tot)
+
+
+produto = ler_produto()
+
+quantidade = int(input("Quantidade: "))
+
+preco = float(input("Preço: "))
+
+sub = subtotal(quantidade, preco)
+
+desc = desconto(sub)
+
+tot = total(sub, desc)
+
+cupom(produto, sub, desc, tot)
